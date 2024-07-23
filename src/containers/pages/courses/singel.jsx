@@ -1,5 +1,14 @@
 import { useParams } from 'react-router-dom';
-import CoursesData from 'services/courses'; // Asegúrate de que la ruta sea correcta
+import CoursesData from 'services/courses';
+import I1 from "assets/images/instructor/i-1.jpg";
+import R1 from "assets/images/review/r-1.jpg";
+import R2 from "assets/images/review/r-2.jpg";
+import R3 from "assets/images/review/r-3.jpg";
+import Y1 from "assets/images/your-make/y-1.jpg";
+import Cu2 from "assets/images/course/cu-2.jpg";
+import Cu1 from "assets/images/course/cu-1.jpg";
+import T1 from "assets/images/course/teacher/t-3.jpg";
+import T2 from "assets/images/course/teacher/t-2.jpg";
 
 function CourseSingel() {
   const { id } = useParams(); // Obtén el ID del curso de la URL
@@ -226,7 +235,7 @@ function CourseSingel() {
                                  <div class="instructor-cont">
                                      <div class="instructor-author">
                                          <div class="author-thum">
-                                             <img src="images/instructor/i-1.jpg" alt="Instructor" />
+                                             <img src={I1} alt="Instructor" />
                                          </div>
                                          <div class="author-name">
                                              <a href="#"><h5>Sumon Hasan</h5></a>
@@ -254,7 +263,7 @@ function CourseSingel() {
                                             <div class="singel-reviews">
                                                  <div class="reviews-author">
                                                      <div class="author-thum">
-                                                         <img src="images/review/r-1.jpg" alt="Reviews"/>
+                                                         <img src={R1} alt="Reviews"/>
                                                      </div>
                                                      <div class="author-name">
                                                          <h6>Bobby Aktar</h6>
@@ -280,7 +289,7 @@ function CourseSingel() {
                                             <div class="singel-reviews">
                                                  <div class="reviews-author">
                                                      <div class="author-thum">
-                                                         <img src="images/review/r-2.jpg" alt="Reviews"/>
+                                                         <img src={R2} alt="Reviews"/>
                                                      </div>
                                                      <div class="author-name">
                                                          <h6>Humayun Ahmed</h6>
@@ -306,7 +315,7 @@ function CourseSingel() {
                                             <div class="singel-reviews">
                                                  <div class="reviews-author">
                                                      <div class="author-thum">
-                                                         <img src="images/review/r-3.jpg" alt="Reviews"/>
+                                                         <img src={R3} alt="Reviews"/>
                                                      </div>
                                                      <div class="author-name">
                                                          <h6>Tania Aktar</h6>
@@ -401,7 +410,7 @@ function CourseSingel() {
                              <h4>You make like </h4> 
                              <div class="singel-makelike mt-20">
                                  <div class="image">
-                                     <img src="images/your-make/y-1.jpg" alt="Image"/>
+                                     <img src={Y1} alt="Image"/>
                                  </div>
                                  <div class="cont">
                                      <a href="#"><h4>Introduction to machine languages</h4></a>
@@ -413,7 +422,7 @@ function CourseSingel() {
                              </div>
                              <div class="singel-makelike mt-20">
                                  <div class="image">
-                                     <img src="images/your-make/y-1.jpg" alt="Image"/>
+                                     <img src={Y1} alt="Image"/>
                                  </div>
                                  <div class="cont">
                                      <a href="#"><h4>How to build a basis game with java </h4></a>
@@ -425,7 +434,7 @@ function CourseSingel() {
                              </div>
                              <div class="singel-makelike mt-20">
                                  <div class="image">
-                                     <img src="images/your-make/y-1.jpg" alt="Image"/>
+                                     <img src={Y1} alt="Image"/>
                                  </div>
                                  <div class="cont">
                                      <a href="#"><h4>Basic accounting from primary</h4></a>
@@ -451,7 +460,7 @@ function CourseSingel() {
                              <div class="singel-course mt-30">
                                  <div class="thum">
                                      <div class="image">
-                                         <img src="images/course/cu-2.jpg" alt="Course"/>
+                                         <img src={Cu2} alt="Course"/>
                                      </div>
                                      <div class="price">
                                          <span>Free</span>
@@ -469,7 +478,7 @@ function CourseSingel() {
                                      <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
                                      <div class="course-teacher">
                                          <div class="thum">
-                                             <a href="#"><img src="images/course/teacher/t-2.jpg" alt="teacher"/></a>
+                                             <a href="#"><img src={T1} alt="teacher"/></a>
                                          </div>
                                          <div class="name">
                                              <a href="#"><h6>Mark anthem</h6></a>
@@ -488,7 +497,7 @@ function CourseSingel() {
                              <div class="singel-course mt-30">
                                  <div class="thum">
                                      <div class="image">
-                                         <img src="images/course/cu-1.jpg" alt="Course"/>
+                                         <img src={Cu1} alt="Course"/>
                                      </div>
                                      <div class="price">
                                          <span>Free</span>
@@ -506,7 +515,7 @@ function CourseSingel() {
                                      <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
                                      <div class="course-teacher">
                                          <div class="thum">
-                                             <a href="#"><img src="images/course/teacher/t-3.jpg" alt="teacher"/></a>
+                                             <a href="#"><img src={T2} alt="teacher"/></a>
                                          </div>
                                          <div class="name">
                                              <a href="#"><h6>Mark anthem</h6></a>

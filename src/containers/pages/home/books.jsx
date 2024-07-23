@@ -1,6 +1,8 @@
-import BooksData from "services/books";
+import { Link } from "react-router-dom";
+import BooksDataModule from "services/books";
 
 function Books() {
+  const {BooksData} = BooksDataModule;
   return (
     <section id="publication-part" className="pt-115 pb-120 gray-bg">
       <div className="container">
@@ -42,9 +44,9 @@ function Books() {
                 </div>
                 <div className="cont">
                   <div className="name">
-                    <a href="shop-singel.html">
+                    <Link to={`/shop-single/${book.id}`}>
                       <h6>{book.title} </h6>
-                    </a>
+                    </Link>
                     <span>By {book.author}</span>
                   </div>
                   <div className="button text-right">

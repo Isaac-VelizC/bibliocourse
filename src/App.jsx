@@ -10,6 +10,10 @@ import BlogPage from "containers/pages/blog";
 import ShopPage from "containers/pages/shop";
 import ContactPage from "containers/pages/contact";
 import CourseSingel from "containers/pages/courses/singel";
+import SingelShop from "containers/pages/shop/singel";
+import SingelPost from "containers/pages/blog/singel";
+import SingelEvent from "containers/pages/events/singel";
+import SingelTeacher from "containers/pages/teachers/singel";
 
 function App() {
   const location = useLocation();
@@ -25,6 +29,10 @@ function App() {
       <Route path="/shop" element={<Layout><ShopPage /></Layout>}/>
       <Route path="/contact" element={<Layout><ContactPage /></Layout>}/>
       <Route path="/course-single/:id" element={<Layout><CourseSingel /></Layout>} />
+      <Route path="/blog-single/:id" element={<Layout><SingelPost /></Layout>} />
+      <Route path="/event-single/:id" element={<Layout><SingelEvent /></Layout>} />
+      <Route path="/shop-single/:id" element={<Layout><SingelShop /></Layout>} />
+      <Route path="/teacher-single/:id" element={<Layout><SingelTeacher /></Layout>} />
     </Routes>
   );
 }

@@ -1,9 +1,13 @@
 import Cu1 from "assets/images/course/cu-1.jpg";
-import Cu2 from "assets/images/course/cu-2.jpg";
-import Cu3 from "assets/images/course/cu-3.jpg";
-import Cu4 from "assets/images/course/cu-4.jpg";
-import Cu5 from "assets/images/course/cu-5.jpg";
 import T1 from "assets/images/course/teacher/t-1.jpg";
+import Cu2 from "assets/images/course/cu-2.jpg";
+import T2 from "assets/images/course/teacher/t-2.jpg";
+import Cu3 from "assets/images/course/cu-3.jpg";
+import T3 from "assets/images/course/teacher/t-3.jpg";
+import Cu4 from "assets/images/course/cu-4.jpg";
+import T4 from "assets/images/course/teacher/t-4.jpg";
+import Cu5 from "assets/images/course/cu-5.jpg";
+import T5 from "assets/images/course/teacher/t-5.jpg";
 
 const CoursesData = [
     {
@@ -43,7 +47,7 @@ const CoursesData = [
         teacher: {
           id: 1,
           name: 'Mark anthem',
-          avatar: T1
+          avatar: T2
         },
         users: 30,
         heart: 10,
@@ -57,7 +61,7 @@ const CoursesData = [
         teacher: {
           id: 1,
           name: 'Mark anthem',
-          avatar: T1
+          avatar: T3
         },
         users: 23,
         heart: 10,
@@ -65,6 +69,20 @@ const CoursesData = [
       {
         id: 5,
         img: Cu5,
+        price: 'Free',
+        star: 4,
+        title: "Learn basis javascirpt from start for beginner",
+        teacher: {
+          id: 1,
+          name: 'Mark anthem',
+          avatar: T4
+        },
+        users: 23,
+        heart: 10,
+      },
+      {
+        id: 6,
+        img: Cu1,
         price: 'Free',
         star: 4,
         title: "Learn basis javascirpt from start for beginner",
