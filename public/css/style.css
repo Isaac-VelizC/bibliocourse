@@ -43,6 +43,10 @@
 
 */
 
+:root {
+    --color-primario: #07294d; /* Azul */
+    --color-secundario: #ffc600; /* Naranja */
+}
 
 /*===========================
     1. Theme default css 
@@ -162,26 +166,26 @@ p {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border: 1px solid #ffc600;
+	border: 1px solid var(--color-secundario);
 	padding: 0 35px;
 	font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 	line-height: 50px;
 	border-radius: 5px;
-    color: #07294d;
+    color: var(--color-primario);
     cursor: pointer;
     position: relative;
     overflow: hidden;
     z-index: 5;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-color: #ffc600;
+    background-color: var(--color-secundario);
 }
 .main-btn:hover{
-    color: #ffc600;
-    border-color: #07294d;
-    background-color: #07294d;
+    color: var(--color-secundario);
+    border-color: var(--color-primario);
+    background-color: var(--color-primario);
 }
 
 

@@ -38,71 +38,6 @@ $(function() {
         
     }
     
-    //===== Slick testimonial Slied
-    
-    $('.testimonial-slied').slick({
-        dots: true,
-        infinite: true,
-        speed: 800,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
-    });
-    
-    //===== Slick testimonial Slied
-    
-    $('.student-slied').slick({
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 800,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-    });
-    
-    
-    
-    //===== Nice Select
-    
-    $('select').niceSelect();
-    
     
     
     //===== Count Down
@@ -125,26 +60,5 @@ $(function() {
         self.addClass('active');
     });
         
-    
-    
-    //===== Nice Number
-    
-    $('input[type="number"]').niceNumber({
-        // custom button text
-        buttonDecrement: "<i class='fa fa-sort-asc' ></i>",
-        buttonIncrement: "<i class='fa fa-sort-desc' ></i>",
-
-    });
-
-    
-    
-    //===== Magnific Popup
-    
-    $('.shop-items').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
-    });
     
 });

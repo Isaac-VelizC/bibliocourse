@@ -4,33 +4,33 @@ import PostsDataLists from "services/blogs";
 function BlogPage() {
     const { PostsData, PostsDataNew } = PostsDataLists;
   return (
-    <section id="blog-page" class="pt-90 pb-120 gray-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
+    <section id="blog-page" className="pt-90 pb-120 gray-bg">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8">
             {PostsDataNew.map((post) => (
-              <div key={post.id} class="singel-blog mt-30">
-                <div class="blog-thum">
+              <div key={post.id} className="singel-blog mt-30">
+                <div className="blog-thum">
                   <img src={post.img} alt="Blog" />
                 </div>
-                <div class="blog-cont">
+                <div className="blog-cont">
                   <Link to={`/blog-single/${post.id}`}>
                     <h3>{post.title}</h3>
                   </Link>
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa fa-calendar"></i>{post.date}
+                        <i className="fa fa-calendar"></i>{post.date}
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-user"></i>{post.user}
+                        <i className="fa fa-user"></i>{post.user}
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-tags"></i>{post.tags}
+                        <i className="fa fa-tags"></i>{post.tags}
                       </a>
                     </li>
                   </ul>
@@ -44,45 +44,45 @@ function BlogPage() {
                 </div>
               </div>
             ))}
-            <nav class="courses-pagination mt-50">
-              <ul class="pagination justify-content-lg-end justify-content-center">
-                <li class="page-item">
+            <nav className="courses-pagination mt-50">
+              <ul className="pagination justify-content-lg-end justify-content-center">
+                <li className="page-item">
                   <a href="#" aria-label="Previous">
-                    <i class="fa fa-angle-left"></i>
+                    <i className="fa fa-angle-left"></i>
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="active" href="#">
+                <li className="page-item">
+                  <a className="active" href="#">
                     1
                   </a>
                 </li>
-                <li class="page-item">
+                <li className="page-item">
                   <a href="#">2</a>
                 </li>
-                <li class="page-item">
+                <li className="page-item">
                   <a href="#">3</a>
                 </li>
-                <li class="page-item">
+                <li className="page-item">
                   <a href="#" aria-label="Next">
-                    <i class="fa fa-angle-right"></i>
+                    <i className="fa fa-angle-right"></i>
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="col-lg-4">
-            <div class="saidbar">
-              <div class="row">
-                <div class="col-lg-12 col-md-6">
-                  <div class="saidbar-search mt-30">
+          <div className="col-lg-4">
+            <div className="saidbar">
+              <div className="row">
+                <div className="col-lg-12 col-md-6">
+                  <div className="saidbar-search mt-30">
                     <form action="#">
                       <input type="text" placeholder="Search" />
                       <button type="button">
-                        <i class="fa fa-search"></i>
+                        <i className="fa fa-search"></i>
                       </button>
                     </form>
                   </div>
-                  <div class="categories mt-30">
+                  <div className="categories mt-30">
                     <h4>Categories</h4>
                     <ul>
                       <li>
@@ -112,18 +112,18 @@ function BlogPage() {
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-12 col-md-6">
-                  <div class="saidbar-post mt-30">
+                <div className="col-lg-12 col-md-6">
+                  <div className="saidbar-post mt-30">
                     <h4>Popular Posts</h4>
                     <ul>
                       {PostsData.map((post) => (
                         <li key={post.id}>
                           <Link to={`/blog-single/${post.id}`}>
-                            <div class="singel-post">
-                              <div class="thum">
+                            <div className="singel-post">
+                              <div className="thum">
                                 <img src={post.img} alt="Blog" />
                               </div>
-                              <div class="cont">
+                              <div className="cont">
                                 <h6>{post.title}</h6>
                                 <span>{post.date}</span>
                               </div>

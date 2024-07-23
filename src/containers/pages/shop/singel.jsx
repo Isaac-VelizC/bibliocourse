@@ -13,70 +13,70 @@ function SingelShop() {
   }
 
   return (
-    <section id="shop-singel" class="pt-120 pb-120 gray-bg">
-      <div class="container">
-        <div class="shop-destails">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="shop-left pt-30">
-                <div class="tab-content" id="pills-tabContent">
+    <section id="shop-singel" className="pt-120 pb-120 gray-bg">
+      <div className="container">
+        <div className="shop-destails">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="shop-left pt-30">
+                <div className="tab-content" id="pills-tabContent">
                   <div
-                    class="tab-pane fade show active"
+                    className="tab-pane fade show active"
                     id="pills-image-1"
                     role="tabpanel"
                     aria-labelledby="pills-image-1-tab"
                   >
-                    <div class="shop-image">
-                      <a href={book.img} class="shop-items">
+                    <div className="shop-image">
+                      <a href={book.img} className="shop-items">
                         <img src={book.img} alt="Shop" />
                       </a>
                     </div>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="pills-image-2"
                     role="tabpanel"
                     aria-labelledby="pills-image-2-tab"
                   >
-                    <div class="shop-image">
-                      <a href="images/shop-singel/ss-2.jpg" class="shop-items">
+                    <div className="shop-image">
+                      <a href="images/shop-singel/ss-2.jpg" className="shop-items">
                         <img src="images/shop-singel/ss-2.jpg" alt="Shop" />
                       </a>
                     </div>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="pills-image-3"
                     role="tabpanel"
                     aria-labelledby="pills-image-3-tab"
                   >
-                    <div class="shop-image">
-                      <a href="images/shop-singel/ss-3.jpg" class="shop-items">
+                    <div className="shop-image">
+                      <a href="images/shop-singel/ss-3.jpg" className="shop-items">
                         <img src="images/shop-singel/ss-3.jpg" alt="Shop" />
                       </a>
                     </div>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="pills-image-4"
                     role="tabpanel"
                     aria-labelledby="pills-image-4-tab"
                   >
-                    <div class="shop-image">
-                      <a href="images/shop-singel/ss-1.jpg" class="shop-items">
+                    <div className="shop-image">
+                      <a href="images/shop-singel/ss-1.jpg" className="shop-items">
                         <img src="images/shop-singel/ss-1.jpg" alt="Shop" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <ul
-                  class="nav nav-justified mt-30"
+                  className="nav nav-justified mt-30"
                   id="pills-tab"
                   role="tablist"
                 >
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a
-                      class="active"
+                      className="active"
                       id="pills-image-1-tab"
                       data-toggle="pill"
                       href="#pills-image-1"
@@ -84,12 +84,12 @@ function SingelShop() {
                       aria-controls="pills-image-1"
                       aria-selected="true"
                     >
-                      <span class="shop-thum">
+                      <span className="shop-thum">
                         <img src="images/shop-singel/ss-s1.jpg" alt="Thum" />
                       </span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a
                       id="pills-image-2-tab"
                       data-toggle="pill"
@@ -98,12 +98,12 @@ function SingelShop() {
                       aria-controls="pills-image-2"
                       aria-selected="false"
                     >
-                      <span class="shop-thum">
+                      <span className="shop-thum">
                         <img src="images/shop-singel/ss-s2.jpg" alt="Thum" />
                       </span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a
                       id="pills-image-3-tab"
                       data-toggle="pill"
@@ -112,12 +112,12 @@ function SingelShop() {
                       aria-controls="pills-image-1"
                       aria-selected="false"
                     >
-                      <span class="shop-thum">
+                      <span className="shop-thum">
                         <img src="images/shop-singel/ss-s3.jpg" alt="Thum" />
                       </span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a
                       id="pills-image-4-tab"
                       data-toggle="pill"
@@ -126,7 +126,7 @@ function SingelShop() {
                       aria-controls="pills-image-4"
                       aria-selected="false"
                     >
-                      <span class="shop-thum">
+                      <span className="shop-thum">
                         <img src="images/shop-singel/ss-s1.jpg" alt="Thum" />
                       </span>
                     </a>
@@ -134,8 +134,8 @@ function SingelShop() {
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="shop-right pt-30">
+            <div className="col-lg-6">
+              <div className="shop-right pt-30">
                 <h6>{book.title} </h6>
                 <span>{book.price}</span>
                 <p>
@@ -145,24 +145,24 @@ function SingelShop() {
                   libero sit amet quam egestas semper. Aenean ultricies mi vitae
                   est. Mauris placerat eleifend leo.
                 </p>
-                <div class="nice-number pt-15">
+                <div className="nice-number pt-15">
                   <input type="number" value="1" />
                 </div>
-                <div class="add-btn pt-15">
-                  <button type="button" class="main-btn">
+                <div className="add-btn pt-15">
+                  <button type="button" className="main-btn">
                     Add to Cart
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="shop-reviews mt-60">
-                <ul class="nav" id="myTab" role="tablist">
-                  <li class="nav-item">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="shop-reviews mt-60">
+                <ul className="nav" id="myTab" role="tablist">
+                  <li className="nav-item">
                     <a
-                      class="active"
+                      className="active"
                       id="description-tab"
                       data-toggle="tab"
                       href="#description"
@@ -173,7 +173,7 @@ function SingelShop() {
                       Description
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a
                       id="reviews-tab"
                       data-toggle="tab"
@@ -186,14 +186,14 @@ function SingelShop() {
                     </a>
                   </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div className="tab-content" id="myTabContent">
                   <div
-                    class="tab-pane fade show active"
+                    className="tab-pane fade show active"
                     id="description"
                     role="tabpanel"
                     aria-labelledby="description-tab"
                   >
-                    <div class="description-cont pt-40">
+                    <div className="description-cont pt-40">
                       <p>
                         Pellentesque habitant morbi tristique senectus et netus
                         et malesuada fames ac turpis egestas. Vestibulum tortor
@@ -205,50 +205,50 @@ function SingelShop() {
                     </div>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="reviews"
                     role="tabpanel"
                     aria-labelledby="reviews-tab"
                   >
-                    <div class="reviews-cont">
+                    <div className="reviews-cont">
                       <ul>
                         <li>
-                          <div class="singel-reviews">
-                            <div class="reviews-author">
-                              <div class="author-thum">
+                          <div className="singel-reviews">
+                            <div className="reviews-author">
+                              <div className="author-thum">
                                 <img
                                   src={R1}
                                   alt="Reviews"
                                 />
                               </div>
-                              <div class="author-name">
+                              <div className="author-name">
                                 <h6>Bobby Aktar</h6>
                                 <span>April 03, 2019</span>
                               </div>
                             </div>
-                            <div class="reviews-description pt-20">
+                            <div className="reviews-description pt-20">
                               <p>
                                 There are many variations of passages of Lorem
                                 Ipsum available, but the majority have suffered
                                 alteration in some form, by injected humour, or
                                 randomised words which.
                               </p>
-                              <div class="rating">
+                              <div className="rating">
                                 <ul>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                 </ul>
                                 <span>/ 5 Star</span>
@@ -257,42 +257,42 @@ function SingelShop() {
                           </div>
                         </li>
                         <li>
-                          <div class="singel-reviews">
-                            <div class="reviews-author">
-                              <div class="author-thum">
+                          <div className="singel-reviews">
+                            <div className="reviews-author">
+                              <div className="author-thum">
                                 <img
                                   src={R2}
                                   alt="Reviews"
                                 />
                               </div>
-                              <div class="author-name">
+                              <div className="author-name">
                                 <h6>Humayun Ahmed</h6>
                                 <span>April 13, 2019</span>
                               </div>
                             </div>
-                            <div class="reviews-description pt-20">
+                            <div className="reviews-description pt-20">
                               <p>
                                 There are many variations of passages of Lorem
                                 Ipsum available, but the majority have suffered
                                 alteration in some form, by injected humour, or
                                 randomised words which.
                               </p>
-                              <div class="rating">
+                              <div className="rating">
                                 <ul>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                   <li>
-                                    <i class="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   </li>
                                 </ul>
                                 <span>/ 5 Star</span>
@@ -301,51 +301,51 @@ function SingelShop() {
                           </div>
                         </li>
                       </ul>
-                      <div class="reviews-form">
+                      <div className="reviews-form">
                         <form action="#">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-singel">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="form-singel">
                                 <input type="text" placeholder="Fast name" />
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="form-singel">
+                            <div className="col-md-6">
+                              <div className="form-singel">
                                 <input type="text" placeholder="Last Name" />
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="form-singel">
-                                <div class="rate-wrapper">
-                                  <div class="rate-label">Your Rating:</div>
-                                  <div class="rate">
-                                    <div class="rate-item">
+                            <div className="col-lg-12">
+                              <div className="form-singel">
+                                <div className="rate-wrapper">
+                                  <div className="rate-label">Your Rating:</div>
+                                  <div className="rate">
+                                    <div className="rate-item">
                                       <i
-                                        class="fa fa-star"
+                                        className="fa fa-star"
                                         aria-hidden="true"
                                       ></i>
                                     </div>
-                                    <div class="rate-item">
+                                    <div className="rate-item">
                                       <i
-                                        class="fa fa-star"
+                                        className="fa fa-star"
                                         aria-hidden="true"
                                       ></i>
                                     </div>
-                                    <div class="rate-item">
+                                    <div className="rate-item">
                                       <i
-                                        class="fa fa-star"
+                                        className="fa fa-star"
                                         aria-hidden="true"
                                       ></i>
                                     </div>
-                                    <div class="rate-item">
+                                    <div className="rate-item">
                                       <i
-                                        class="fa fa-star"
+                                        className="fa fa-star"
                                         aria-hidden="true"
                                       ></i>
                                     </div>
-                                    <div class="rate-item">
+                                    <div className="rate-item">
                                       <i
-                                        class="fa fa-star"
+                                        className="fa fa-star"
                                         aria-hidden="true"
                                       ></i>
                                     </div>
@@ -353,14 +353,14 @@ function SingelShop() {
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="form-singel">
+                            <div className="col-lg-12">
+                              <div className="form-singel">
                                 <textarea placeholder="Comment"></textarea>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="form-singel">
-                                <button type="button" class="main-btn">
+                            <div className="col-lg-12">
+                              <div className="form-singel">
+                                <button type="button" className="main-btn">
                                   Post Comment
                                 </button>
                               </div>
@@ -375,44 +375,44 @@ function SingelShop() {
             </div>
           </div>
         </div>
-        <div class="releted-item pt-110">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="title pb-10">
+        <div className="releted-item pt-110">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="title pb-10">
                 <h3>Releted products</h3>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div className="row justify-content-center">
             {BooksData.map((data) => (
-              <div key={data.id} class="col-lg-3 col-md-6 col-sm-8">
-                <div class="singel-publication mt-30">
-                  <div class="image">
+              <div key={data.id} className="col-lg-3 col-md-6 col-sm-8">
+                <div className="singel-publication mt-30">
+                  <div className="image">
                     <img src={data.img} alt="Publication" />
-                    <div class="add-cart">
+                    <div className="add-cart">
                       <ul>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart-o"></i>
+                            <i className="fa fa-heart-o"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="cont">
-                    <div class="name">
+                  <div className="cont">
+                    <div className="name">
                       <Link to={`/shop-single/${data.id}`}>
                         <h6>{data.title} </h6>
                       </Link>
                       <span>{data.price}</span>
                     </div>
-                    <div class="button text-right">
-                      <a href="#" class="main-btn">
+                    <div className="button text-right">
+                      <a href="#" className="main-btn">
                         Buy Now
                       </a>
                     </div>
